@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+}
+
+.piece {
+    cursor: pointer;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    height: 800px;
+    width: 800px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.cell {
+    height: 12.5%;
+    width: 12.5%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.black {
+    background-color: rgb(58, 58, 58);
+}
+
+.white {
+    background-color: wheat;
+}
+
+.bP {
+    background-image: url('./assets/bP.png');
+}
+
+.bN {
+    background-image: url('./assets/bN.png');
+}
+
+.bB {
+    background-image: url('./assets/bB.png');
+}
+
+.bR {
+    background-image: url('./assets/bR.png');
+}
+
+.bQ {
+    background-image: url('./assets/bQ.png');
+}
+
+.bK {
+    background-image: url('./assets/bK.png');
+}
+
+.wP {
+    background-image: url('./assets/wP.png');
+}
+
+.wN {
+    background-image: url('./assets/wN.png');
+}
+
+.wB {
+    background-image: url('./assets/wB.png');
+}
+
+.wR {
+    background-image: url('./assets/wR.png');
+
+}
+
+.wQ {
+    background-image: url('./assets/wQ.png');
+}
+
+.wK {
+    background-image: url('./assets/wK.png');
+}
+
+.available::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    margin-top: 25%;
+    margin-left: 25%;
+}
